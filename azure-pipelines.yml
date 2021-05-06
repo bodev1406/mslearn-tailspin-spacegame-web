@@ -9,7 +9,7 @@ ms.locfileid: "104284475"
 trigger:
 - '*'
 jobs:
--job: buildNormal
+- job: buildNormal
   pool:
     vmImage: ubuntu-18.04
     demands:
