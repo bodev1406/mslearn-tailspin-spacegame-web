@@ -4,10 +4,6 @@ trigger:
 - '*'
 jobs:
 - job: buildNormal
-  pool:
-    vmImage: ubuntu-18.04
-    demands:
-    - npm
   variables:
     buildConfiguration: Release
     wwwrootDir: Tailspin.SpaceGame.Web/wwwroot
