@@ -4,6 +4,8 @@ trigger:
 - '*'
 jobs:
 - job: buildNormal
+  strategy:
+    parallel: 1
   variables:
     buildConfiguration: Release
     wwwrootDir: Tailspin.SpaceGame.Web/wwwroot
